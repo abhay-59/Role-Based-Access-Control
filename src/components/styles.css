@@ -1,0 +1,292 @@
+/* Global styles */
+body {
+ font-family: 'Arial', sans-serif;
+ margin: 0;
+ padding: 0;
+ background: #ede6e6;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+
+.container {
+ max-width: 500px;
+ width: 100%;
+ background-color: white;
+ border-radius: 12px;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+ padding: 20px;
+ animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+   transform: translateY(-10px);
+ }
+ to {
+   opacity: 1;
+   transform: translateY(0);
+ }
+}
+
+/* Form styles */
+form {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+input {
+ padding: 10px;
+ border: 1px solid #ddd;
+ border-radius: 6px;
+ font-size: 16px;
+}
+
+button {
+ padding: 12px;
+ background: black;
+ border: none;
+ color: white;
+ font-size: 16px;
+ font-weight: bold;
+ border-radius: 6px;
+ cursor: pointer;
+ transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+ transform: scale(1.05);
+ background: grey;
+}
+
+.error-message {
+ color: #ff4d4f;
+ font-size: 14px;
+ font-weight: bold;
+ text-align: center;
+}
+
+.back-button {
+ background-color: #ddd;
+ color: black;
+ font-size: 14px;
+ margin-top: 10px;
+}
+
+/* Table styles */
+table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 20px;
+}
+
+th, td {
+ border: 1px solid #ddd;
+ padding: 12px;
+ text-align: left;
+}
+
+th {
+ background-color: #f4f4f4;
+ font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+ background-color: #f9f9f9;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-text {
+  font-size: 22px;
+}
+
+.logout-button button {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button button:hover {
+  background-color: #9b59b6;
+}
+
+/* Welcome Message Styles */
+.welcome-message {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.welcome-message span {
+  color: #2980b9;
+  font-weight: bold;
+}
+
+/* Table Styles */
+.user-table-container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 1rem;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+.table-title {
+  font-size: 24px;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-table th, .user-table td {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.user-table th {
+  background-color: #34495e;
+  color: white;
+}
+
+.user-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.user-table td {
+  color: #7f8c8d;
+}
+
+/* Button Styling */
+button {
+  margin: 2px;
+  padding: 10px 10px;
+  background-color: #ff0022;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8a7474;
+}S
+
+button:focus {
+  outline: none;
+}
+
+/* Specific Table Row Visibility Fix */
+.user-table tbody td {
+  color: #2c3e50;
+}
+
+
+/* Main Container */
+.auth-container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Title Styling */
+.auth-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Buttons Wrapper */
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Base Button Styling */
+.auth-button {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Login Button */
+.login-button {
+  background-color: #ff0000;;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: green;
+  transform: translateY(-3px);
+}
+
+/* Signup Button */
+.signup-button {
+  background-color: black;
+  color: white;
+}
+
+.signup-button:hover {
+  background-color: green;
+  transform: translateY(-3px);
+}
+
+/* Button Focus State */
+.auth-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+}
+
+/* Hover & Active Effects */
+.auth-button:hover {
+  background-color: #8a7474;
+  transform: scale(1.05);
+}
+
+

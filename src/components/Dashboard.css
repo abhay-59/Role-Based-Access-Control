@@ -1,0 +1,128 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Neutral dark gray */
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Smooth rounded corners */
+   }
+   
+   .navbar-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+   }
+   
+   .logout-button {
+    display: flex;
+    align-items: center;
+   }
+   
+   .signout-button {
+    background-color: #d35400; /* Warm orange for the logout button */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+   }
+   
+   .signout-button:hover {
+    background-color: #b03a00; /* Slightly darker warm orange */
+    transform: scale(1.05); /* Subtle zoom effect */
+   }
+   
+   /* User Table Container */
+   .user-table-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #f7f7f7; /* Soft light gray for a clean layout */
+    border-radius: 12px; /* Softer rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Elevated card-like shadow */
+   }
+   
+   .welcome-message {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #4a4a4a; /* Neutral dark gray for text */
+    text-align: center;
+   }
+   
+   .welcome-message span {
+    font-weight: bold;
+    color: #bf3d3d; /* Warm purple for emphasis */
+   }
+   
+   /* Table Styles */
+   .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the table */
+   }
+   
+   .user-table thead {
+    background-color: #5a5a5a; /* Neutral dark gray for the header */
+    color: white;
+   }
+   
+   .user-table th,
+   .user-table td {
+    text-align: left;
+    padding: 14px 20px; /* Adds space between table elements */
+    border-bottom: 1px solid #ddd;
+   }
+   
+   .user-table th {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+   }
+   
+   .user-table td {
+    font-size: 0.95rem;
+   }
+   
+   .user-table tbody tr:hover {
+    background-color: #f0e6e6; /* Very light beige on hover */
+    cursor: pointer;
+   }
+   
+   .user-table tbody tr:nth-child(odd) {
+    background-color: #fdf6f3; /* Warm off-white for alternating rows */
+   }
+   
+   .user-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+   }
+   
+   .table-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    text-align: center;
+   }
+   
+   /* Delete Icon Styling */
+   .delete-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+   }
+   
+   .delete-icon:hover {
+    transform: scale(1.2); /* Enlarge slightly on hover */
+    opacity: 0.8; /* Subtle transparency */
+   }
+   
