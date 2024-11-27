@@ -63,7 +63,7 @@ const AuthForm = ({ isLogin, setView }) => {
 
         {/* Full Page User Table */}
         <div className="welcome-message">
-          Welcome <span>{currentUser.name}</span>, you signed in as <span>{currentUser.role}</span>
+          Welcome <span>{currentUser.name}</span>, you are signed in as <span>{currentUser.role}</span>
         </div>
         <div className="user-table-container">
           <h2 className="table-title">All Signed-Up Users</h2>
